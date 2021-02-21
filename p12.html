@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset = "UTF-8"/>
+  <meta name="author" content="Johnny Morcos 40172039">
+  <meta name="keywords" content="Item Edit">
+  <meta name="description" content="This is the page that allows the user to edit all the orders">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="backend_custom.css">
+
+  <script type="text/javascript">
+    //shows an alert that order has been saved
+    function orderSaved() {
+      alert("Order has been saved.")
+      document.location='p11.html'
+    }
+  </script>
+
+  <title>New Order</title>
+</head>
+<body>
+  <div class="side-bars"> </div>
+
+  <div class="container" style="text-align: center; font-size:large; padding-top:5%;">
+    <form>
+      <fieldset>
+        <legend>Personal Details:</legend>
+        <label for="fullname">Orderer's Name:</label>
+        <input type="text" id="fullname" name="fullname"><br>
+  
+        <label for="ordernumber">Order Number:</label>
+        <input type="text" id="ordernumber" name="ordernumber"><br>
+      </fieldset><br>
+  
+      <fieldset>
+        <legend>Order:</legend>
+        <label for="order">How much of each item would you like to order? (Leave blank if none)</label><br>
+  
+        <label for="apple">Apple:</label>
+        <input type="number" id="apple" name="apple"><br>
+  
+        <label for="orange">Orange:</label>
+        <input type="number" id="orange" name="orange"><br>
+        
+        <label for="tomato">Tomato:</label>
+        <input type="number" id="tomato" name="tomato"><br>
+        
+        <label for="milk">2% Milk:</label>
+        <input type="number" id="milk" name="milk"><br>
+  
+        <label for="eggs">Eggs:</label>
+        <input type="number" id="eggs" name="eggs"><br>
+  
+        <label for="yogurt">Yogurt:</label>
+        <input type="number" id="yogurt" name="yogurt"><br>
+  
+        <label for="chicken">Whole Chicken:</label>
+        <input type="number" id="chicken" name="chicken"><br>
+  
+        <label for="sausage">Sausage:</label>
+        <input type="number" id="sausage" name="sausage"><br>
+  
+        <label for="groundbeef">Ground Beef:</label>
+        <input type="number" id="groundbeef" name="groundbeef"><br>
+      </fieldset>
+      <br>
+    </form>
+    <button class="btn" onclick=orderSaved()>Save Order</button>
+  </div>
+</body>
+</html>
