@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif
+    }
+    
+    #cart-table {
+        width: 75%;
+        border-collapse: collapse;
+        margin: 100px auto;
+    }
+    
+    .cart-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .cart-info img {
+        object-fit: contain;
+        width: 100px;
+    }
+    
+    .product-info {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
+    th {
+        text-align: left;
+        padding: 5px;
+        color: #fff;
+        background: #467CFA;
+    }
+    
+    .total-price {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 12%;
+    }
+    
+    .total-price table {
+        border-top: 3px solid #467CFA;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    td:last-child {
+        text-align: right;
+    }
+    
+    th:last-child {
+        text-align: right;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .total-price {
+            display: flex;
+            justify-content: flex-end;
+            margin: 0px 5%;
+            vertical-align: right;
+        }
+    }
+</style>
+
+<head>
+    <title>E-Mart · Shopping Cart</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark     " style="background-color: #467CFA;">
+        <div class="container-fluid">
+            <img src="blue basket.png" alt="">
+            <h1><span>E</span>-Mart</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav ml-auto mr-5">
+                    <li class="mr-2">
+                        <a class="nav-link  active" href="CartText.html" aria-current="page"><img src="small cart.png" alt="cant find small cart.png"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Aisles
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" style="font-size: small;" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Fruits & Vegetables</a></li>
+                            <li><a class="dropdown-item" href="#">Dairy & Eggs</a></li>
+                            <li><a class="dropdown-item" href="#">Meat & Poultry</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <table id="cart-table">
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="apple.jpg" alt=" ">
+                    <div class="product-info">
+                        <p>Red Apple</p>
+                        <small>Price: 2$</small>
+                        <button>Remove</button>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1" min="1"></td>
+            <td>$2.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="apple.jpg" alt=" ">
+                    <div class="product-info">
+                        <p>Red Apple</p>
+                        <small>Price: 2$</small>
+                        <button>Remove</button>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1" min="1"></td>
+            <td>$2.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="apple.jpg" alt=" ">
+                    <div class="product-info">
+                        <p>Red Apple</p>
+                        <small>Price: 2$</small>
+                        <button>Remove</button>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1" min="1"></td>
+            <td>$2.00</td>
+        </tr>
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>No. of Items</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Subtotal</td>
+                <td>895023985</td>
+            </tr>
+            <tr>
+                <td>GST + QST</td>
+                <td>12$</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>230$</td>
+            </tr>
+            <tr>
+                <td> <button style="margin-top: 15px;">Continue Shopping</button></td>
+                <td><input type="submit" style="margin-top: 15px;"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js " integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js " integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG " crossorigin="anonymous "></script>
+</body>
+
+</html>

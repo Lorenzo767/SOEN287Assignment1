@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <title>Edit User</title>
+    <meta name="author" content="Azal Al-Mashta, 40179492">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+</head>
+<style>
+    div{
+        margin-left: 10px;
+        text-align: left;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <div class="inner_header" style="margin-left:0;">
+            <div class="logo_container">
+                <h1><img src="blue basket.png" alt=" couldn't find blue basket.png ">
+                <span>E</span>-Mart</h1>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>Edit User</h1>
+    </div>
+
+    <div class="container-fluid"> 
+        <div class="row">
+            <div class="col-sm">
+                
+                 <h4><a id="personal_information">Personal Information</a></h4>
+                    <p>
+                        <form>
+                            <p>Current Name: Firstname Lastname</p>
+                            <label>Change First name: </label>
+                            <input type="text" name="firstname"/></br>
+                            <label>Change Last name: </label>
+                            <input type="text" name="lastname"/></br>
+                            <button class="btn">Save Name <span class="badge badge-primary"></span></button></br><br/>
+                            <p>Current email: firstname.lastname@gmail.com</p>
+                            <label>Change Email: </label>
+                            <input type="text" name="email"/></br>
+                            <label>Confirm Email: </label>
+                            <input type="text" name="emailconfirm"/></br>
+                            <button class="btn">Save Email <span class="badge badge-primary"></span></button></br><br/>
+                            <p>Current password: aSf3h&dv47</p>
+                            <label>Change Password: </label>
+                            <input type="password" name="password"/></br>
+                            <label>Confirm Password: </label>
+                            <input type="password" name="passwordconfirm"/></br>
+                            <button class="btn">Save Password <span class="badge badge-primary"></span></button>
+                        </form>
+                    </p>
+                    
+                 <h4><a id="mailing_preferences">Mailing Preferences</a></h4>
+                    <p>
+                        <form>
+                            <input type="checkbox" id="preference1" name="preference1" value="promos">
+                            <label for="preference1"> Receive promos and discounts</label><br/>
+                            <input type="checkbox" id="preference2" name="preference2" value="newsletter">
+                            <label for="preference2"> Receive our newsletter</label><br/>
+                            <input type="checkbox" id="preference3" name="preference3" value="special offers">
+                            <label for="preference3"> Receive our special offers</label><br/>
+                            <input type="checkbox" id="preference4" name="preference4" value="rewards program">
+                            <label for="preference3"> Receive our rewards programs?</label><br/>
+                            <input type="checkbox" id="preference5" name="preference5" value="surveys">
+                            <label for="preference3"> Participate in our surveys </label><br/>
+                            <button class="btn">Save <span class="badge badge-primary"></span></button>
+                          </form>
+                    </p>
+                    <h4><a id="shopping_list">Shopping List</a></h4>
+                    <p>
+                        <a href="p11.html" target="_blank">Click here</a>
+                        to access your shopping list.
+                    </p>
+            </div>
+            
+        </div>
+    
+    </div>
+
+</body>
