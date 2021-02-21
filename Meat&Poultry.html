@@ -1,47 +1,91 @@
 <!DOCTYPE html>
 <!--Meat & Pultry section-->
-<html lang = "en">
-    <head>
-        <title>Section Meat</title>
-        <meta chraset = "utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en">
+
+<head>
+    <title>Section Meat</title>
+    <meta chraset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <pre> <h1>E-Mart                                     Meat & Poultry</h1></pre>
-        <link rel = "stylesheet" href = "styleCat.css" />
-    </head>
-    <body>
-        <div class = "container">
-        <div class = "table">
-        <table border = "1">
-            <tr>
-      <td>  <div class = "col1">
-          
-        <a href= "Chicken.html" target= "_parent">   <img src=https://5.imimg.com/data5/GB/OD/MY-46171336/chicken-with-skin-500x500.jpg
-width = "100" height = "100" ></a>
-<P>Fresh whole chicken<br /><br /> 8.50 $</P>
-<button class="btn">
-    <P>Add to Cart</P><span class="badge badge-primary"></span></button>
+    <link rel="stylesheet" href="styleCat.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark     " style="background-color: #467CFA;">
+        <div class="container-fluid" style="position: relative; text-align: center;">
+            <img src="blue basket.png" alt="">
+            <h1><span>E</span>-Mart</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav ml-auto mr-5">
+                    <li class="mr-2">
+                        <a class="nav-link  active" href="CartText.html" aria-current="page"><img src="small cart.png" alt="cant find small cart.png"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Aisles
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" style="font-size: small;" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="Fruits&Vegetables.html">Fruits & Vegetables</a></li>
+                            <li><a class="dropdown-item" href="Dairy&Eggs.html">Dairy & Eggs</a></li>
+                            <li><a class="dropdown-item" href="Meat&Poultry.html">Meat & Poultry</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </td>
-      <td>  <div class = "col2">
-        <a href= "Beef.html" target= "_parent">  <img src=https://az836796.vo.msecnd.net/media/image/product/en/large/0021166600000.jpg
- width =  "100"  height = "100"  ></a>
- <P>Fresh(Qc) ground beef <br /> <br />15.50 $</P>
- <button class="btn">
-    <P>Add to Cart</P><span class="badge badge-primary"></span></button>
+    </nav>
+    <pre> <h1>                                        Meat & Poultry</h1></pre>
+
+    <div class="container">
+        <div class="table">
+            <table border="1">
+                <tr>
+                    <td>
+                        <div class="col1">
+
+                            <a href="Chicken.html" target="_parent"> <img src=https://5.imimg.com/data5/GB/OD/MY-46171336/chicken-with-skin-500x500.jpg width="100" height="100"></a>
+                            <P>Fresh whole chicken<br /><br /> 8.50 $</P>
+                            <button class="btn">
+                                <P>Add to Cart</P><span class="badge badge-primary"></span>
+                            </button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col2">
+                            <a href="Beef.html" target="_parent"> <img src=https://az836796.vo.msecnd.net/media/image/product/en/large/0021166600000.jpg width="100" height="100"></a>
+                            <P>Fresh(Qc) ground beef <br /> <br />15.50 $</P>
+                            <button class="btn">
+                                <P>Add to Cart</P><span class="badge badge-primary"></span>
+                            </button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col3">
+                            <a href="Saussage.html" target="_parent"> <img src=https://www.harvestmeats.ca/wp-content/uploads/2019/06/22.jpg width="100" height="100"></a>
+                            <P>Italian mini saussages<br /> <br />6.50 $</P>
+                            <button class="btn">
+                                <P>Add to Cart</P><span class="badge badge-primary"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
-      </td>
-      <td> <div class = "col3">
-        <a href= "Saussage.html" target= "_parent">   <img src=https://www.harvestmeats.ca/wp-content/uploads/2019/06/22.jpg width = "100" height = "100"></a>
-            <P>Italian mini saussages<br /> <br />6.50 $</P>
-            <button class="btn">
-<P>Add to Cart</P><span class="badge badge-primary"></span></button>
-              </div>
-      </td>
-            </tr>
-        </table>
-        </div>
-        </div>
-    </body>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js " integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js " integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG " crossorigin="anonymous "></script>
+
+</body>
 
 </html>
