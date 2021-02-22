@@ -1,182 +1,138 @@
 body {
-    background-color:white;
+    background-color: white;
     font-family: Verdana;
 }
 
-h1{
-    background-color:#467CFA;
+h1 {
+    background-color: #467CFA;
     text-align: left;
-    color:white;
+    color: white;
     padding: 5px;
-
 }
 
-
-.col1
-{
-    
-  margin: 20%;
-  padding: auto;
-  
-}
-.col2
-{
-  
-    margin: 20%;
-    padding: auto;
-   
-}
-.col3
-{
-    
+.col1 {
     margin: 20%;
     padding: auto;
 }
-.table{
+
+.col2 {
+    margin: 20%;
+    padding: auto;
+}
+
+.col3 {
+    margin: 20%;
+    padding: auto;
+}
+
+.table {
     text-align: center;
     padding-left: 33.3%;
 }
 
+
 /*/ Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap*/
-@media (max-width: 575.98px){
-    .container{
-        width:80%;
-      
-    }
-   
-    img{
-        width:100%;
-        height:100%;
-    }
-}
-.col1
-{
-    
-  width:50%;
-}
-.col2
-{
-  
-    width:50%;
-}
-.col3
-{
-    
-    width:50%;
-}
 
-/*/ Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px){ 
-    .container{
-    width: 70%;
-  
-
- }
- .col1
- {
-     
-   width:60%;
-   
- }
- .col2
- {
-   
-     width:60%;
-    
- }
- .col3
- {
-     
-     width:60%;
- }
-
- img{
-     width: 100%;
-     height: 100%;
-     }
-}
-/*/ Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px){.container{
-    width: 70%;
+@media (max-width: 575.98px) {
+    .container {
+        width: 80%;
     }
-
-    .col1
-    {
-        
-      width:60%;
-      
-    }
-    .col2
-    {
-      
-        width:60%;
-       
-    }
-    .col3
-    {
-        
-        width:60%;
-    }
-
-    img{
+    table img {
         width: 100%;
         height: 100%;
-        }
-
+    }
 }
 
-/*/ Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px){ .container{
-    
-    width:80%;
-   }
-   
-   .col1
-   {
-       
-     width:65%;
-     
-   }
-   .col2
-   {
-     
-       width:65%;
-      
-   }
-   .col3
-   {
-       
-       width:50%;
-   }
+.col1 {
+    width: 50%;
+}
 
-   img{
-       width: 100%;
-      height: 100%;
-       }
-    
-   
-   }
-   @media (min-width: 1200px) and (max-width: 1500px){
-       .container{
-           width:100%;
-       }
-       .col1
-       {
-           
-         width:65%;
-         
-       }
-       .col2
-       {
-         
-           width:60%;
-          
-       }
-       .col3
-       {
-           
-           width:60%;
-       }
-    
-   }
+.col2 {
+    width: 50%;
+}
+
+.col3 {
+    width: 50%;
+}
+
+
+/*/ Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container {
+        width: 70%;
+    }
+    .col1 {
+        width: 60%;
+    }
+    .col2 {
+        width: 60%;
+    }
+    .col3 {
+        width: 60%;
+    }
+    table img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/*/ Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        width: 70%;
+    }
+    .col1 {
+        width: 60%;
+    }
+    .col2 {
+        width: 60%;
+    }
+    .col3 {
+        width: 60%;
+    }
+    table img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/*/ Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+        width: 80%;
+    }
+    .col1 {
+        width: 65%;
+    }
+    .col2 {
+        width: 65%;
+    }
+    .col3 {
+        width: 50%;
+    }
+    table img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .container {
+        width: 100%;
+    }
+    .col1 {
+        width: 65%;
+    }
+    .col2 {
+        width: 60%;
+    }
+    .col3 {
+        width: 60%;
+    }
+}
