@@ -1,0 +1,19 @@
+{
+  "name": "soen287assignment1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lorenzo767/SOEN287Assignment1.git"
+  },
+  "author": "Lorenzo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lorenzo767/SOEN287Assignment1/issues"
+  },
+  "homepage": "https://github.com/Lorenzo767/SOEN287Assignment1#readme"
+}

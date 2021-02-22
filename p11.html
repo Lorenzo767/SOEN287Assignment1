@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset = "UTF-8"/>
+
+<head>
+    <meta charset="UTF-8" />
     <meta name="author" content="Johnny Morcos 40172039">
     <meta name="keywords" content="Order list, Items, List">
     <meta name="description" content="This is the page that shows order history of all users.">
@@ -11,277 +12,282 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    
-    <link rel="stylesheet" href="backend_custom.css">
-    
+
+    <link rel="stylesheet" href="Styles/backend_custom.css">
+
     <title>Order List</title>
 
     <script type="text/javascript">
-      //shows a confirmation box when you want to delete an order
-      function chooseOrderToDelete() {
-        prompt("Enter the order number of the order you'd like to delete:");
-      }
+        //shows a confirmation box when you want to delete an order
+        function chooseOrderToDelete() {
+            prompt("Enter the order number of the order you'd like to delete:");
+        }
     </script>
-  </head>
-  
-  <body>
+</head>
+
+<body>
     <div class="border"></div>
 
     <div class="container">
-      <div class="header">
-        
-        <h2><img class="logo" src="blue_basket.png" alt="Couldn't find blue_basket.png">Orders:</img></h2>
-      </div>
+        <div class="header">
 
-      <table class="table main-table table-striped table-responsive">
+            <h2>
+                <a href="Index.html"><img class="logo" src="Images/blue_basket.png" alt="Couldn't find blue_basket.png"></img>
+                </a>
+                Orders:
+            </h2>
+        </div>
 
-        <tr style="height: 100%;">
-          <th>Name</th>
-          <th>Order Number</th>
-          <th>Order</th>
-          <th>Amount</th>
-          <th style="width:98px;"></th>
-        </tr>
+        <table class="table main-table table-striped table-responsive">
 
-        <tr style="height: 98px;">
-          <td style="vertical-align: middle;">Barry Byrne</td>
-          <td style="vertical-align: middle;">467812AB</td>
-          <td style="vertical-align: middle;">
+            <tr style="height: 100%;">
+                <th>Name</th>
+                <th>Order Number</th>
+                <th>Order</th>
+                <th>Amount</th>
+                <th style="width:98px;"></th>
+            </tr>
 
-            <table class="order-table" style="border-spacing: 0; padding: 0">
-              <tr>
-                <td>Apple</td>
-              </tr>
-              <tr>
-                <td>Orange</td>
-              </tr>
-              <tr>
-                <td>Ground Beef</td>
-              </tr>
-            </table>
+            <tr style="height: 98px;">
+                <td style="vertical-align: middle;">Barry Byrne</td>
+                <td style="vertical-align: middle;">467812AB</td>
+                <td style="vertical-align: middle;">
 
-          </td>
+                    <table class="order-table" style="border-spacing: 0; padding: 0">
+                        <tr>
+                            <td>Apple</td>
+                        </tr>
+                        <tr>
+                            <td>Orange</td>
+                        </tr>
+                        <tr>
+                            <td>Ground Beef</td>
+                        </tr>
+                    </table>
 
-          <td style="vertical-align: middle;">
-            <table class="order-table" style="border-spacing: 0; padding: 0">
-              <tr>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>8</td>
-              </tr>
-              <tr>
-                <td>1</td>
-              </tr>
-            </table>
-          </td>
+                </td>
 
-          <td style="vertical-align: middle;"><a href="p12.html" target="_self"><button class="btn">Edit Order</button></a></td>
-        </tr>
+                <td style="vertical-align: middle;">
+                    <table class="order-table" style="border-spacing: 0; padding: 0">
+                        <tr>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                </td>
 
-        <tr style="height: 98px;">
-          <td style="vertical-align: middle;">Lili Hendrix</td>
-          <td style="vertical-align: middle;">758349NC</td>
-          <td style="vertical-align: middle;">
+                <td style="vertical-align: middle;"><a href="p12.html" target="_self"><button class="btn">Edit Order</button></a></td>
+            </tr>
 
-            <table class="order-table" style="border-spacing: 0; padding: 0; background-color:#F9F9F9">
-              <tbody>
-                <tr>
-                  <td>Tomato</td>
-                </tr>
-              </tbody>
-            </table>
+            <tr style="height: 98px;">
+                <td style="vertical-align: middle;">Lili Hendrix</td>
+                <td style="vertical-align: middle;">758349NC</td>
+                <td style="vertical-align: middle;">
 
-          </td>
+                    <table class="order-table" style="border-spacing: 0; padding: 0; background-color:#F9F9F9">
+                        <tbody>
+                            <tr>
+                                <td>Tomato</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-          <td style="vertical-align: middle;">
-            <table class="order-table" style="border-spacing: 0; padding: 0">
-              <tr>
-                <td>16</td>
-              </tr>
-            </table>
-          </td>
-          <td style="vertical-align: middle;"><a href="p12.html" target="_self"><button class="btn">Edit Order</button></a></td>
-        </tr>
+                </td>
 
-        <tr style="height: 98px;">
-          <td style="vertical-align: middle;">Nana Calhoun</td>
-          <td style="vertical-align: middle;">473289RN</td>
-          <td style="vertical-align: middle;">
+                <td style="vertical-align: middle;">
+                    <table class="order-table" style="border-spacing: 0; padding: 0">
+                        <tr>
+                            <td>16</td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="vertical-align: middle;"><a href="p12.html" target="_self"><button class="btn">Edit Order</button></a></td>
+            </tr>
 
-            <table class="order-table" style="border-spacing: 0; padding: 0">
-              <tbody>
-                <tr>
-                  <td>2% Milk</td>
-                </tr>
-                <tr>
-                  <td>Eggs</td>
-                </tr>
-              </tbody>
-            </table>
+            <tr style="height: 98px;">
+                <td style="vertical-align: middle;">Nana Calhoun</td>
+                <td style="vertical-align: middle;">473289RN</td>
+                <td style="vertical-align: middle;">
 
-          </td>
+                    <table class="order-table" style="border-spacing: 0; padding: 0">
+                        <tbody>
+                            <tr>
+                                <td>2% Milk</td>
+                            </tr>
+                            <tr>
+                                <td>Eggs</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-          <td style="vertical-align: middle;">
-            <table class="order-table" style="border-spacing: 0; padding: 0">
-              <tr>
-                <td>50</td>
-              </tr>
-              <tr>
-                <td>2</td>
-              </tr>
-            </table>
-          </td>
-          <td style="vertical-align: middle;"><a href="p12.html" target="_self"><button class="btn">Edit Order</button></a></td>
-        </tr>
+                </td>
 
-        <tr style="height: 98px;">
-          <td style="vertical-align: middle;">Muhammed Brett</td>
-          <td style="vertical-align: middle;">593234EO</td>
-          <td style="vertical-align: middle;">
+                <td style="vertical-align: middle;">
+                    <table class="order-table" style="border-spacing: 0; padding: 0">
+                        <tr>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="vertical-align: middle;"><a href="p12.html" target="_self"><button class="btn">Edit Order</button></a></td>
+            </tr>
 
-            <table class="order-table" style="border-spacing: 0; padding: 0; background-color:#F9F9F9">
-              <tr>
-                <td>Apple</td>
-              </tr>
-              <tr>
-                <td>Yoghurt</td>
-              </tr>
-            </table>
+            <tr style="height: 98px;">
+                <td style="vertical-align: middle;">Muhammed Brett</td>
+                <td style="vertical-align: middle;">593234EO</td>
+                <td style="vertical-align: middle;">
 
-          </td>
+                    <table class="order-table" style="border-spacing: 0; padding: 0; background-color:#F9F9F9">
+                        <tr>
+                            <td>Apple</td>
+                        </tr>
+                        <tr>
+                            <td>Yoghurt</td>
+                        </tr>
+                    </table>
 
-          <td style="vertical-align: middle;">
-            <table class="order-table" style="border-spacing: 0; padding: 0">
-              <tr>
-                <td>94</td>
-              </tr>
-              <tr>
-                <td>3</td>
-              </tr>
-            </table>
-          </td>
-          <td style="vertical-align: middle;"><a href="p12.html" target="_self"><button class="btn">Edit Order</button></a></td>
-        </tr>
+                </td>
 
-        <tr style="height: 98px;">
-          <td style="vertical-align: middle;">Kye Magana</td>
-          <td style="vertical-align: middle;">065434NF</td>
-          <td style="vertical-align: middle;">
+                <td style="vertical-align: middle;">
+                    <table class="order-table" style="border-spacing: 0; padding: 0">
+                        <tr>
+                            <td>94</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="vertical-align: middle;"><a href="p12.html" target="_self"><button class="btn">Edit Order</button></a></td>
+            </tr>
 
-            <table class="order-table" style="border-spacing: 0; padding: 0">
-              <tr>
-                <td>Whole Chicken</td>
-              </tr>
-            </table>
+            <tr style="height: 98px;">
+                <td style="vertical-align: middle;">Kye Magana</td>
+                <td style="vertical-align: middle;">065434NF</td>
+                <td style="vertical-align: middle;">
 
-          </td>
+                    <table class="order-table" style="border-spacing: 0; padding: 0">
+                        <tr>
+                            <td>Whole Chicken</td>
+                        </tr>
+                    </table>
 
-          <td style="vertical-align: middle;">
-            <table class="order-table" style="border-spacing: 0; padding: 0">
-              <tr>
-                <td>1205</td>
-              </tr>
-            </table>
-          </td>
-          <td style="vertical-align: middle;"><a href="p12.html" target="_self"><button class="btn">Edit Order</button></a></td>
-        </tr>
+                </td>
 
-        <tr style="height: 98px;">
-          <td style="vertical-align: middle;">Alice Amos</td>
-          <td style="vertical-align: middle;">573489EP</td>
-          <td style="vertical-align: middle;">
+                <td style="vertical-align: middle;">
+                    <table class="order-table" style="border-spacing: 0; padding: 0">
+                        <tr>
+                            <td>1205</td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="vertical-align: middle;"><a href="p12.html" target="_self"><button class="btn">Edit Order</button></a></td>
+            </tr>
 
-            <table class="order-table" style="border-spacing: 0; padding: 0; background-color:#F9F9F9">
-              <tr>
-                <td>Apple</td>
-              </tr>
-              <tr>
-                <td>Sausage</td>
-              </tr>
-            </table>
+            <tr style="height: 98px;">
+                <td style="vertical-align: middle;">Alice Amos</td>
+                <td style="vertical-align: middle;">573489EP</td>
+                <td style="vertical-align: middle;">
 
-          </td>
+                    <table class="order-table" style="border-spacing: 0; padding: 0; background-color:#F9F9F9">
+                        <tr>
+                            <td>Apple</td>
+                        </tr>
+                        <tr>
+                            <td>Sausage</td>
+                        </tr>
+                    </table>
 
-          <td style="vertical-align: middle;">
-            <table class="order-table" style="border-spacing: 0; padding: 0">
-              <tr>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td>1</td>
-              </tr>
-            </table>
-          </td>
-          <td style="vertical-align: middle;"><a href="p12.html" target="_self"><button class="btn">Edit Order</button></a></td>
-        </tr>
+                </td>
 
-        <tr style="height: 98px;">
-          <td style="vertical-align: middle;">Briana Hickman</td>
-          <td style="vertical-align: middle;">483920WK</td>
-          <td style="vertical-align: middle;">
+                <td style="vertical-align: middle;">
+                    <table class="order-table" style="border-spacing: 0; padding: 0">
+                        <tr>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="vertical-align: middle;"><a href="p12.html" target="_self"><button class="btn">Edit Order</button></a></td>
+            </tr>
 
-            <table class="order-table" style="border-spacing: 0; padding: 0">
-              <tr>
-                <td>Tomato</td>
-              </tr>
-              <tr>
-                <td>Apple</td>
-              </tr>
-              <tr>
-                <td>2% Milk</td>
-              </tr>
-              <tr>
-                <td>Orange</td>
-              </tr>
-            </table>
+            <tr style="height: 98px;">
+                <td style="vertical-align: middle;">Briana Hickman</td>
+                <td style="vertical-align: middle;">483920WK</td>
+                <td style="vertical-align: middle;">
 
-          </td>
+                    <table class="order-table" style="border-spacing: 0; padding: 0">
+                        <tr>
+                            <td>Tomato</td>
+                        </tr>
+                        <tr>
+                            <td>Apple</td>
+                        </tr>
+                        <tr>
+                            <td>2% Milk</td>
+                        </tr>
+                        <tr>
+                            <td>Orange</td>
+                        </tr>
+                    </table>
 
-          <td style="vertical-align: middle;">
-            <table class="order-table" style="border-spacing: 0; padding: 0">
-              <tr>
-                <td>4000</td>
-              </tr>
-              <tr>
-                <td>600</td>
-              </tr>
-              <tr>
-                <td>20</td>
-              </tr>
-              <tr>
-                <td>700</td>
-              </tr>
-            </table>
-          </td>
-          <td style="vertical-align: middle;"><a href="p12.html" target="_self"><button class="btn">Edit Order</button></a></td>
-        </tr>
+                </td>
 
-        <tr style="height: 98px;">
-          <td style="vertical-align: middle;">Kishan Curtis</td>
-          <td style="vertical-align: middle;">849723NQ</td>
-          <td style="vertical-align: middle;">
+                <td style="vertical-align: middle;">
+                    <table class="order-table" style="border-spacing: 0; padding: 0">
+                        <tr>
+                            <td>4000</td>
+                        </tr>
+                        <tr>
+                            <td>600</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>700</td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="vertical-align: middle;"><a href="p12.html" target="_self"><button class="btn">Edit Order</button></a></td>
+            </tr>
 
-            <table class="order-table" style="border-spacing: 0; padding: 0; background-color:#F9F9F9">
-              <tr>
-                <td>Eggs</td>
-              </tr>
-            </table>
+            <tr style="height: 98px;">
+                <td style="vertical-align: middle;">Kishan Curtis</td>
+                <td style="vertical-align: middle;">849723NQ</td>
+                <td style="vertical-align: middle;">
 
-          </td>
+                    <table class="order-table" style="border-spacing: 0; padding: 0; background-color:#F9F9F9">
+                        <tr>
+                            <td>Eggs</td>
+                        </tr>
+                    </table>
 
-          <td style="vertical-align: middle;">
-            <table class="order-table" style="border-spacing: 0; padding: 0">
-              <tr>
-                <td>1</td>
-              </tr>
-            </table>
-          </td>
-          <td style="vertical-align: middle;"><a href="p12.html" target="_self"><button class="btn">Edit Order</button></a></td>
-        </tr>
-      </table>
-      <a href="p12.html" target="_self"><button class="btn">Add an Order</button></a>
-      <button class="btn" onclick=chooseOrderToDelete()>Delete an Order</button>
+                </td>
+
+                <td style="vertical-align: middle;">
+                    <table class="order-table" style="border-spacing: 0; padding: 0">
+                        <tr>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="vertical-align: middle;"><a href="p12.html" target="_self"><button class="btn">Edit Order</button></a></td>
+            </tr>
+        </table>
+        <a href="p12.html" target="_self"><button class="btn">Add an Order</button></a>
+        <button class="btn" onclick=chooseOrderToDelete()>Delete an Order</button>
     </div>
-  </body>
+</body>
+
 </html>
